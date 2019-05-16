@@ -1,0 +1,41 @@
+{
+  "name": "force-app-name-prefix",
+  "version": "0.1.0",
+  "description": "A stylelint plugin that force it to have app name as prefix",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunHuawei/force-app-name-prefix.git"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "stylelint",
+    "stylelint-plugin",
+    "css",
+    "nesting",
+    "linter",
+    "bem"
+  ],
+  "author": "Sun Huawei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SunHuawei/force-app-name-prefix/issues"
+  },
+  "homepage": "https://github.com/SunHuawei/force-app-name-prefix#readme",
+  "dependencies": {
+    "lodash": ">=3.10.0",
+    "postcss": ">=5.0.19",
+    "postcss-bem-linter": "^3.0.0",
+    "stylelint": ">=3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "stylelint-test-rule-tape": "^0.2.0"
+  }
+}
