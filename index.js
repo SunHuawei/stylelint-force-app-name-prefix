@@ -1,7 +1,7 @@
 var _ = require('lodash');
 var stylelint = require('stylelint');
 
-var ruleName = 'plugin/force-app-name-prefix';
+var ruleName = 'plugin/stylelint-force-app-name-prefix';
 
 var optionsSchema = {
   appName: _.isString

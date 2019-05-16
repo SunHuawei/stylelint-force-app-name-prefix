@@ -1,5 +1,5 @@
 {
-  "name": "force-app-name-prefix",
+  "name": "stylelint-force-app-name-prefix",
   "version": "0.1.0",
   "description": "A stylelint plugin that force it to have app name as prefix",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SunHuawei/force-app-name-prefix.git"
+    "url": "git+https://github.com/SunHuawei/stylelint-force-app-name-prefix.git"
   },
   "files": [
     "index.js"
@@ -25,9 +25,9 @@
   "author": "Sun Huawei",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SunHuawei/force-app-name-prefix/issues"
+    "url": "https://github.com/SunHuawei/stylelint-force-app-name-prefix/issues"
   },
-  "homepage": "https://github.com/SunHuawei/force-app-name-prefix#readme",
+  "homepage": "https://github.com/SunHuawei/stylelint-force-app-name-prefix#readme",
   "dependencies": {
     "lodash": ">=3.10.0",
     "postcss": ">=5.0.19",

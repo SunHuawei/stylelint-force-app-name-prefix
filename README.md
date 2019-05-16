@@ -1,4 +1,4 @@
-# force-app-name-prefix
+# stylelint-force-app-name-prefix
 
 A stylelint plugin that force it to have app name as prefix.
 
@@ -7,14 +7,14 @@ To avoid css naming conflicts between apps, suggest to separate css selectors by
 ## Installation
 
 ```
-npm install force-app-name-prefix
+npm install stylelint-force-app-name-prefix
 ```
 
 Be warned: this is only compatible with stylelint v3+.
 
 ## Usage
 
-Add it to your stylelint config `plugins` array, then add `"plugin/force-app-name-prefix"` to your rules,
+Add it to your stylelint config `plugins` array, then add `"plugin/stylelint-force-app-name-prefix"` to your rules,
 specifying your app name as `appName` in the primary option.
 
 Like so:
@@ -23,11 +23,11 @@ Like so:
 // .stylelintrc
 {
   "plugins": [
-    "force-app-name-prefix"
+    "stylelint-force-app-name-prefix"
   ],
   "rules": {
     // ...
-    "plugin/force-app-name-prefix": {
+    "plugin/stylelint-force-app-name-prefix": {
       appName: 'your-app-name'
     },
     // ...
@@ -42,11 +42,11 @@ Disallow missing prefix or namespace for selectors, keyframes name and custom fo
 ```css
     .some-selector { ... }
 /** ↑
- * Selector "some-selector" is out of control, please wrap within .your-app-name         plugin/force-app-name-prefix */
+ * Selector "some-selector" is out of control, please wrap within .your-app-name         plugin/stylelint-force-app-name-prefix */
 
     @keyframes spin {
 /** ↑
- * Keyframes name "spin" is out of control, please prefix with your-app-name       plugin/force-app-name-prefix */
+ * Keyframes name "spin" is out of control, please prefix with your-app-name       plugin/stylelint-force-app-name-prefix */
         0% { ... }
         100% { ... }
     }
@@ -54,7 +54,7 @@ Disallow missing prefix or namespace for selectors, keyframes name and custom fo
     @font-face {
         font-family: "my-font";
 /**                   ↑
- * Custom font-family "my-font" is out of control, please prefix with your-app-name         plugin/force-app-name-prefix */
+ * Custom font-family "my-font" is out of control, please prefix with your-app-name         plugin/stylelint-force-app-name-prefix */
         ...
     }
 ```
